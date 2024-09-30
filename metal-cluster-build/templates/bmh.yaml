@@ -1,0 +1,3 @@
+{{- printf "Assignments: %v" .Values.assignments | quote }}
+{{- printf "Nodes: %v" .Values.nodes | quote }}
+

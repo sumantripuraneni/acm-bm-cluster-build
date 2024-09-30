@@ -1,0 +1,29 @@
+assignments:
+  - node: node1
+    namespace: openshift-metal
+    assignmentType: agent
+    extraLabels: {}
+    extraAnnotations: {}
+    infraEnvName: test-infraEnv
+  - node: node2
+    namespace: openshift-metal
+    assignmentType: agent
+    extraLabels: {}
+    extraAnnotations: {}
+    infraEnvName: test-infraEnv
+
+nodes:
+  - name: node1
+    bootMac: 00:00:00:00:01
+    bmc:
+      url: lio://node1
+    creds:
+      username: dXNlcm5hbWU=
+      password: cGFzc3dvcmQ=
+  - name: node2
+    bootMac: 00:00:00:00:02
+    bmc:
+      url: lio://node2
+    creds:
+      username: dXNlcm5hbWU=
+      password: cGFzc3dvcmQ=
